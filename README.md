@@ -60,9 +60,9 @@ This project is a full-stack Appointment Booking System that allows users to vie
 
    This command builds the backend and frontend images, starts a PostgreSQL container, and runs all services in detached mode.
 
-4. **Access the Application:**
+4. **Access the Application (Local):**
 
-   - **Frontend:** Open your browser and navigate to [http://75.101.221.96](http://75.101.221.96) to see the improved booking widget.
+   - **Frontend:** Open your browser and navigate to [http://localhost/](http://localhost/) to see the improved booking widget.
    - **Backend API:** The API is available at [http://localhost:3000](http://localhost:3000).
 
 5. **Stopping the Application:**
