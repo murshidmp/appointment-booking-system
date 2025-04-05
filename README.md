@@ -1,7 +1,7 @@
 
 # Appointment Booking System
 
-This project is a full-stack Appointment Booking System that allows users to view available time slots and book appointments. The system consists of a NestJS backend (using PostgreSQL) and a reusable HTML/CSS/JS frontend plugin.
+This project is a full-stack Appointment Booking System that allows users to view available time slots and book appointments. The system consists of a NestJS backend (using PostgreSQL) and a reusable HTML/CSS/JS frontend plugin that has been updated with Tailwind CSS for an enhanced UI experience.
 
 ## Functionalities
 
@@ -14,8 +14,12 @@ This project is a full-stack Appointment Booking System that allows users to vie
 - **Appointment Booking:**  
   Users can book an appointment by providing their name, phone number, date, and a selected time slot. The system validates that the chosen time slot is within operating hours and not already booked.
 
-- **Reusable Frontend Plugin:**  
-  The booking UI is packaged as a JavaScript plugin that can be embedded into any website via a `<script>` tag.
+- **Updated Frontend Plugin:**  
+  The booking UI is now built with Tailwind CSS and presents an interactive panel:
+  - A date picker defaults to today’s date.
+  - Available slots are shown as green buttons and booked slots as red buttons.
+  - Users can click an available slot to select it and proceed with booking.
+  - The plugin is designed to be embeddable into any website via a `<script>` tag.
 
 - **Backend Implementation:**  
   The backend is built using NestJS and TypeORM with PostgreSQL as the database. It provides REST API endpoints to fetch available slots and book appointments.
@@ -58,8 +62,8 @@ This project is a full-stack Appointment Booking System that allows users to vie
 
 4. **Access the Application:**
 
-   - **Frontend:** Open your browser and navigate to `http://localhost` to see the booking widget.
-   - **Backend API:** The API is available at `http://localhost:3000`.
+   - **Frontend:** Open your browser and navigate to [http://75.101.221.96](http://75.101.221.96) to see the improved booking widget.
+   - **Backend API:** The API is available at [http://localhost:3000](http://localhost:3000).
 
 5. **Stopping the Application:**
 
@@ -80,8 +84,8 @@ appointment-booking-system/
 │   └── ...               # Other backend configuration files
 ├── frontend/             # Reusable HTML/CSS/JS plugin for appointment booking
 │   ├── index.html        # Demo page for the plugin
-│   ├── style.css         # Styles for the booking widget
-│   ├── plugin.js         # Embeddable booking widget code
+│   ├── style.css         # Styles for the booking widget (now using Tailwind CSS)
+│   ├── plugin.js         # Embeddable booking widget code with enhanced UI
 │   └── Dockerfile        # Dockerfile for serving static files via Nginx (optional)
 ├── docker-compose.yml    # Docker Compose file to run all services locally
 └── README.md             # This file
@@ -95,11 +99,12 @@ appointment-booking-system/
 - **Extensibility:**  
   The frontend plugin is designed to be reusable. It can be embedded in any webpage by including the plugin JavaScript file using a `<script>` tag.
 
-- **Further Improvements:**  
-  - Implement user authentication if needed.
-  - Enhance the frontend UI/UX for a better user experience.
-  - Host the entire app
- 
+- **UI Enhancements:**  
+  The updated UI uses Tailwind CSS to display a panel with a date picker and a color-coded view of time slots (green for available, red for booked). This interactive design improves the user experience by clearly indicating slot availability.
+
+- **Hosted Application:**  
+  The Appointment Booking System is also hosted at [http://75.101.221.96](http://75.101.221.96).
+
 **Video Explanation:**
 
-   - **Link:** `https://drive.google.com/file/d/1dkQsu9ih-u6LA0ocRytj0GnPjs2x2Vlv/view?usp=sharing`
+- **Link:** [https://drive.google.com/file/d/1dkQsu9ih-u6LA0ocRytj0GnPjs2x2Vlv/view?usp=sharing](https://drive.google.com/file/d/1dkQsu9ih-u6LA0ocRytj0GnPjs2x2Vlv/view?usp=sharing)
